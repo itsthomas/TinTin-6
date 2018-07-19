@@ -14,7 +14,6 @@ const url = 'data.json';
 fetch(url)
   .then(response => {
     if (!response.ok) {
-      return;
       throw Error(response.statusText);
     }
     // Read the response as json.
