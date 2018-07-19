@@ -2,7 +2,9 @@
 function createHtml(ourData) {
   // ourData is just a parameter and can be named anything
   const rawTemplate = document.querySelector('#ourTemplate').innerHTML;
+  /* eslint-disable no-undef */
   const compiledTemplate = Handlebars.compile(rawTemplate);
+  /* eslint-enable no-undef  */
   const ourGeneratedHTML = compiledTemplate(ourData);
 
   const ourContainer = document.querySelector('#container');
